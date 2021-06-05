@@ -2,19 +2,35 @@ module.exports = (sequelize, DataTypes) => {
 	const User = sequelize.define(
 		'user', // table name
 		{
-			// Model attributes are defined here
 			id: {
-				type: DataTypes.STRING(50),
-				allowNull: false,
+				type: DataTypes.INTEGER,
 				primaryKey: true,
+				autoIncrement: true,
 			},
-			fullname: {
+			name: {
 				type: DataTypes.STRING(100),
+				allowNull: false,
+			},
+			email: {
+				type: DataTypes.STRING(100),
+				allowNull: false,
+				unique: true
+			},
+			password: { // @todo figure out Sequelize hashing
+				type: DataTypes.STRING(100),
+				allowNull: false,
+			},
+			state: {
+				type: DataTypes.STRING(2),
+				allowNull: false,
+			},
+			zip: {
+				type: DataTypes.STRING(10),
 				allowNull: false,
 			},
 		},
 		{
-			// Other model options go here
+			// @todo pw hashing here
 		}
 	);
 
