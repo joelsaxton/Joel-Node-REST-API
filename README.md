@@ -8,8 +8,8 @@
 This API:
 1. POST /register Registers a user (name,email,password)
 2. POST /login Authenticate a user.
-3. PATCH /user Update a user's name, state and zip
-4. GET /user/{id} Display a user
+3. PATCH /user/:id Update a user's name, state and zip
+4. GET /user/:id Display a user
 
 Notes:
 1. It took me well over 2 hours to get to this point
