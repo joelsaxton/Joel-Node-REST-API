@@ -13,6 +13,6 @@ This API:
 
 Notes:
 1. It took me well over 2 hours to get to this point
-2. I was able to sign up to an single external API for zip code weather, but I don't have any more time to work on this
-3. I wanted to make an OpenAPI yaml file but I didn't have time. But I did include a Postman json file which you can import into Postman.
+2. I was able to sign up to an single external API for zip code weather, but Axios was breaking for some reason and I ran out of time
+3. I wanted to make an OpenAPI yaml file but instead I included a Postman json file which you can import into Postman.
 4. There are several todo's commented in the code, which mostly outline things I felt would be important to a more robust API
